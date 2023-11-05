@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root{
+    --color: #f50;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    position: relative;
+    width: 80%;
+    height: 50%;
+    background: linear-gradient(#000,#111,#222);
+    border-radius: 50px;
+    border: 5px solid var(--color);
+}
+.clock .date-info{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: 5px solid var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: var(--color);
+}
+.clock .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 8em;
+    color: var(--color);
+}
+
+@media screen and (max-width : 1024px){
+    .clock{
+        width: 90%;
+        height: 45%;
+    }
+    .clock .date-info{
+        font-size: 2em;
+    }
+    .clock .time{
+        font-size: 6em;
+    }
+}
+@media screen and (max-width : 720px){
+    .clock{
+        height: 35%;
+        border-radius: 30px;
+        border: 2px solid var(--color);
+    }
+    .clock .date-info{
+        font-size: 1.5em;
+        border-bottom: 2px solid var(--color);
+    }
+    .clock .time{
+        font-size: 5em;
+    }
+}
+@media screen and (max-width : 480px){
+    .clock{
+        height: 27%;
+        border-radius: 20px;
+    }
+    .clock .date-info{
+        height: 50px;
+        font-size: 1.2em;
+    }
+    .clock .time{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width : 350px){
+    .clock{
+        height: 24%;
+        border-radius: 20px;
+    }
+    .clock .date-info{
+        height: 40px;
+        font-size: .8em;
+    }
+    .clock .time{
+        font-size: 3em;
+    }
+}
