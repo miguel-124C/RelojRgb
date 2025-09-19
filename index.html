@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1852c762de.js" crossorigin="anonymous"></script>
     <title>Reloj</title>
 </head>
 <body>
     <div class="clock">
-        <div class="date-info"></div>
+        <div class="date-info">
+            <div class="change-color" onclick="setColorFijo()">
+                <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="reset-default-colors" onclick="resetColorsDefault()">
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+        </div>
         <div class="time"></div>
     </div>
 
